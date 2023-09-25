@@ -149,31 +149,34 @@
 
 
 //footer-section-start
-.footer-right-text {
-    a:hover{
-        border-bottom: 1px solid #868e96;
-        transition: 0.5s;
-    }
-}
-#footer-company-links, .footer-shop-links, .footer-company-links{
+.footer-company-links, .footer-shop-links, .footer-account-links,{
     a{
-        text-decoration: none;
-    }
-    a:hover{
-        color: black;
-        text-decoration: underline;
-        transition: all 0.2s ease-in-out;
-        animation: border-anim linear forwards;
-        
-    }
-    
-    @keyframes border-anim {
-        0%{
-            width: 0;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            box-sizing:content-box;
+            bottom: 0;
+            left: 0;
+            width:0%;
+            border-bottom: 1px solid black;
+            transition: 0.5s;
+            color: black;
         }
-        100%{
-            width: 100%;
+        &:hover{
+            color: black;
+            transition: .5s;
+            &::after{
+                width:100px;
+            }
         }
     }
 }
-
+.footer-right-text {
+    a{
+        &:hover{
+            border-bottom: 1px solid #868e96;
+            transition: 0.5s;
+        }
+    }
+}

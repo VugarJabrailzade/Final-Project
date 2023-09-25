@@ -13,7 +13,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Manrope:wght@300;400;500;600;700;800&family=Roboto+Mono:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,200;1,400;1,500;1,600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/styles/css/about.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="styles/scss/about.css">
     <link rel="stylesheet" href="styles/scss/main.css">
 </head>
 
@@ -143,7 +147,7 @@
         </nav>
     </header>
 
-    <div class="first-container w-full h-[407px]">
+    <div class="first-container w-full h-[407px] mt-20">
         <div class="row flex justify-center gap-20  w-[1140px] h-[354px]">
             <div class="horizontal-line flex">⎯⎯⎯⎯⎯⎯⎯⎯⎯</div>
             <div class="flex flex-col gap-4 ">
@@ -159,15 +163,15 @@
             </div>
         </div>
     </div>
-    <div class="middle-container w-full h-[1264px]">
-        <div>
-            <div class="w-[1140px] h-[178px]">
-                <div class="horizontal-line flex">⎯⎯⎯⎯⎯⎯⎯⎯⎯</div>
-                <div class="flex flex-col gap-4 ml-12">
+    <div class="middle-container w-full h-[1164px]">
+        <div class="flex justify-center items-center">
+            <div class="w-[1140px] h-[178px] flex flex-col gap-10">
+                <div class="horizontal-line absolute ml-6">⎯⎯⎯⎯⎯⎯⎯⎯⎯</div>
+                <div class="flex flex-col gap-4 ml-[200px]">
                     <h6 class="text-[#bcac76] font-['K2D'] tracking-[8px] font-bold">THE OLD TIMES</h6>
                     <h1 class="font-bold text-7xl font-['K2D']">History of Varkala</h1>
                     <div>
-                    </div>
+                </div>
                 </div>
                 <div class="w-[1140px] h-[525px] flex gap-8">
                     <div>
@@ -270,14 +274,14 @@
                 illustrated magazine and housed in a nice, gilded frame.</p>
         </div>
     </div>
-    <div class="teamContainer w-full h-[964px] flex justify-center">
-        <div class="w-[1140px] h-[964px] flex gap-10 justify-center">
+    <div class="teamContainer w-full h-[854px] flex justify-center">
+        <div class="w-[1140px] h-[764px] flex gap-10 justify-center">
             <div class="horizontal-line flex">⎯⎯⎯⎯⎯⎯⎯⎯⎯</div>
             <div class="team-row w-[949px] h-[820px] ">
                 <div class="flex  flex-col gap-6 ">
                     <h6 class="tracking-[5px] text-[#bcac76] font-bold text-['K2D']">OUR TEAM</h6>
                     <h1 class="text-7xl text-['K2D'] font-bold">People</h1>
-                    <span >He must have tried it a hundred times, shut his eyes so that he wouldn't
+                    <span>He must have tried it a hundred times, shut his eyes so that he wouldn't
                         have to look at the
                         floundering legs, and only stopped when he began to feel a mild, dull pain there that he had
                         never
@@ -285,45 +289,53 @@
                 </div>
                 <div class="team-row grid grid-rows-2 grid-flow-col gap-6 mr-2 mt-16">
                     <div class="w-[237px] h-[239px] flex flex-col justify-center items-center">
-                        <img class="w-[160px] h-[160px] rounded-[50%] flex" src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-0.jpg" alt="">
-                            <h4 class="mt-4 font-bold text-xl font-['K2D']">Frankie Kafka</h4>
-                            <p class="text-sm font-['K2D'] text-[#868e96]">CEO & FOUNDER</p>
-                        
+                        <img class="w-[160px] h-[160px] rounded-[50%] flex"
+                            src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-0.jpg" alt="">
+                        <h4 class="mt-4 font-bold text-xl font-['K2D']">Frankie Kafka</h4>
+                        <p class="text-sm font-['K2D'] text-[#868e96]">CEO & FOUNDER</p>
+
                     </div>
                     <div class="w-[237px] h-[239px] flex flex-col justify-center items-center">
-                        <img class="w-[160px] h-[160px] rounded-[50%]" src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-4.jpg" alt="">
-                            <h4 class="mt-4 font-bold text-xl font-['K2D']">B.J Petersen</h4>
-                            <p class="text-sm font-['K2D'] text-[#868e96]">E-commerce</p>
-                    </div>  
+                        <img class="w-[160px] h-[160px] rounded-[50%]"
+                            src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-4.jpg" alt="">
+                        <h4 class="mt-4 font-bold text-xl font-['K2D']">B.J Petersen</h4>
+                        <p class="text-sm font-['K2D'] text-[#868e96]">E-commerce</p>
+                    </div>
                     <div class="w-[237px] h-[239px] flex flex-col justify-center items-center">
-                        <img class="w-[160px] h-[160px] rounded-[50%]" src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-1.jpg" alt="">
+                        <img class="w-[160px] h-[160px] rounded-[50%]"
+                            src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-1.jpg" alt="">
                         <h4 class="mt-4 font-bold text-xl font-['K2D']">Brittney Day</h4>
                         <p class="text-sm font-['K2D'] text-[#868e96]">CTO</p>
                     </div>
                     <div class="w-[237px] h-[239px] flex flex-col justify-center items-center">
-                        <img class="w-[160px] h-[160px] rounded-[50%]" src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-6.jpg" alt="">
+                        <img class="w-[160px] h-[160px] rounded-[50%]"
+                            src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-6.jpg" alt="">
                         <h4 class="mt-4 font-bold text-xl font-['K2D']">Gabriel Fisher</h4>
                         <p class="text-sm font-['K2D'] text-[#868e96]">Customer care</p>
                     </div>
                     <div class="w-[237px] h-[239px] flex flex-col justify-center items-center">
-                        <img class="w-[160px] h-[160px] rounded-[50%]"  src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-2.jpg" alt="">
+                        <img class="w-[160px] h-[160px] rounded-[50%]"
+                            src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-2.jpg" alt="">
                         <h4 class="mt-4 font-bold text-xl font-['K2D']">Kim Cervantes</h4>
                         <p class="text-sm font-['K2D'] text-[#868e96]">Marketing</p>
-        
+
                     </div>
                     <div class="w-[237px] h-[239px] flex flex-col justify-center items-center">
-                        <img class="w-[160px] h-[160px] rounded-[50%]" src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-5.jpg" alt="">
+                        <img class="w-[160px] h-[160px] rounded-[50%]"
+                            src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-5.jpg" alt="">
                         <h4 class="mt-4 font-bold text-xl font-['K2D']">Mayra Holman</h4>
                         <p class="text-sm font-['K2D'] text-[#868e96]">Customer care</p>
                     </div>
                     <div class="w-[237px] h-[239px] flex flex-col justify-center items-center">
-                        <img class="w-[160px] h-[160px] rounded-[50%]" src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-3.jpg" alt="">
+                        <img class="w-[160px] h-[160px] rounded-[50%]"
+                            src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-3.jpg" alt="">
                         <h4 class="mt-4 font-bold text-xl font-['K2D']">Massey Amstrong</h4>
                         <p class="text-sm font-['K2D'] text-[#868e96]">Customer care</p>
-    
+
                     </div>
                     <div class="w-[237px] h-[239px] flex flex-col justify-center items-center">
-                        <img class="w-[160px] h-[160px] rounded-[50%]" src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-7.jpg" alt="">
+                        <img class="w-[160px] h-[160px] rounded-[50%]"
+                            src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-7.jpg" alt="">
                         <h4 class="mt-4 font-bold text-xl font-['K2D']">Jose Holman</h4>
                         <p class="text-sm font-['K2D'] text-[#868e96]">Customer care</p>
                     </div>
@@ -333,9 +345,207 @@
 
     </div>
     <div class="icons-section">
-        <div></div>
+        <div id="carousel-section" class="bg-[#f8f9fa] w-full h-[373px] flex justify-center items-center mt-10">
+            <div class="responsive w-[950px] h-[146px] flex justify-center">
+                <div class="carousel-div">
+                    <img class="w-[96px] h-[97px]"
+                        src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/brand/brand-1.svg" alt="">
+                </div>
+                <div class="carousel-div">
+                    <img class="w-[96px] h-[97px]"
+                        src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/brand/brand-2.svg" alt="">
+                </div>
+                <div class="carousel-div">
+                    <img class="w-[96px] h-[97px]"
+                        src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/brand/brand-3.svg" alt="">
+                </div>
+                <div class="carousel-div">
+                    <img class="w-[96px] h-[97px]"
+                        src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/brand/brand-4.svg" alt="">
+                </div>
+                <div class="carousel-div">
+                    <img class="w-[96px] h-[97px]"
+                        src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/brand/brand-5.svg" alt="">
+                </div>
+                <div class="carousel-div">
+                    <img class="w-[96px] h-[97px]"
+                        src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/brand/brand-1.svg" alt="">
+                </div>
+                <div class="carousel-div">
+                    <img class="w-[96px] h-[97px]"
+                        src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/brand/brand-2.svg" alt="">
+                </div>
+                <div class="carousel-div">
+                    <img class="w-[96px] h-[97px]"
+                        src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/brand/brand-3.svg" alt="">
+                </div>
+                <div class="carousel-div">
+                    <img class="w-[96px] h-[97px]"
+                        src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/brand/brand-4.svg" alt="">
+                </div>
+                <div class="carousel-div">
+                    <img class="w-[96px] h-[97px]"
+                        src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/brand/brand-5.svg" alt="">
+                </div>
+                <div class="carousel-div">
+                    <img class="w-[96px] h-[97px]"
+                        src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/brand/brand-1.svg" alt="">
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="paragraph-section w-full h-[416px] flex flex-col justify-center items-center gap-14">
+        <div>
+            <div class="h-[83px] w-[923px]">
+                <h2 class="font-bold text-['K2D'] text-3xl text-center">At Varkala, we want the right choice to be easy
+                    as putting
+                    on a great T-shirt</h2>
+            </div>
+        </div>
+        <div class="flex gap-10">
+            <div class="w-[475px] h-[105px]">
+                <p class="text-lg text-['K2D'] text-[#868e96]">One morning, when Gregor Samsa woke from troubled dreams,
+                    he
+                    found himself transformed in his bed into a
+                    horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his
+                    brown belly, slightly domed and divided by arches into stiff sections</p>
+            </div>
+            <div class="w-[475px] h-[105px]">
+                <p class="text-lg text-[#868e96] text-['K2D']">One morning, when Gregor Samsa woke from troubled dreams,
+                    he found himself transformed in his bed into a
+                    horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his
+                    brown belly, slightly domed and divided by arches into stiff sections</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="service-block w-full h-[285px] mt-10 bg-[#f8f9fa] flex justify-center items-center ">
+        <div class="w-[1140px] h-[92px] p-14 flex justify-between items-center">
+            <div class="flex gap-4">
+                <div>
+                    <i class="fa-solid fa-truck text-3xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-sm font-['K2D']">Free Shipping & return</span>
+                    <span class="text-[#868e96] text-sm font-['K2D']">Free Shipping over $300</span>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <div class="flex justify-center items-center">
+                    <i class="fa-solid fa-coins text-3xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-sm font-['K2D']">Money back guarantee</span>
+                    <span class="text-[#868e96] text-sm font-['K2D']">30 Days Money Back Guarantee</span>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <div>
+                    <i class="fa-solid fa-percent text-3xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-sm font-['K2D']">Best prices</span>
+                    <span class="text-[#868e96] text-sm font-['K2D']">Always the best prices</span>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <div class="flex justify-center items-center">
+                    <i class="fa-solid fa-headset text-3xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-sm font-['K2D']">020-800-456-747</span>
+                    <span class="text-[#868e96] text-sm font-['K2D']">24/7 Available Support</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="w-full h-[397px] flex justify-center items-center gap-10 ">
+            <div class="w-[475px] h-[184px] flex flex-col  gap-4">
+                <div class="flex flex-col gap-4 ">
+                    <h6 class="font-bold font-['K2D']">Be in touch</h6>
+                    <span class="text-base text-[#868e96] font-['K2D']">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. At
+                        itaque temporibus.</span>
+                </div>
+                <form class="flex" action="#" id="newsletter-form">
+                    <div class="newsletter-form-div flex justify-between mt-2 w-[364px] h-[40px]">
+                        <div>
+                            <input id="newsletter-input" type="email" name="newsletter-form"
+                                placeholder="Your Email Adress">
+                        </div>
+                        <div class="flex">
+                            <button id="f" class="mr-1 text-3xl">
+                                <i class="fa-regular fa-envelope  text-[#868e96]"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="flex flex-col gap-4 px-2 w-[151px] h-[188px]">
+                <div>
+                    <h6 class="font-bold flex font-['K2D']">Shop</h6>
+                </div>
+                <div class="footer-shop-links flex flex-col gap-2">
+                    <a class="text-[#868e96] font-['K2D']" href="#">For Women</a>
+                    <a class="text-[#868e96] font-['K2D']" href="#">For Men</a>
+                    <a class="text-[#868e96] font-['K2D']" href="#">Stores</a>
+                    <a class="text-[#868e96] font-['K2D']" href="#">Our Blog</a>
+                    <a class="text-[#868e96] font-['K2D']" href="#">Shop</a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 px-2 w-[151px] h-[188px]">
+                <div>
+                    <h6 class="font-bold font-['K2D']">Company</h6>
+                </div>
+                <div id="footer-company-links" class="flex flex-col gap-2">
+                    <a class="text-[#868e96] font-['K2D']" href="#">Login</a>
+                    <a class="text-[#868e96] font-['K2D']" href="#">Register</a>
+                    <a class="text-[#868e96] font-['K2D']" href="#">Wishlist</a>
+                    <a class="text-[#868e96] font-['K2D']" href="#">Our Products</a>
+                    <a class="text-[#868e96] font-['K2D']" href="#">Checkouts</a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 px-2 w-[151px] h-[188px]">
+                <div>
+                    <h6 class="font-bold font-['K2D']">Your account</h6>
+                </div>
+                <div class="footer-company-links flex flex-col gap-2">
+                    <a class="text-[#868e96] font-['K2D']" href="#">Login</a>
+                    <a class="text-[#868e96] font-['K2D']" href="#">Register</a>
+                    <a class="text-[#868e96] font-['K2D']" href="#">Wishlist</a>
+                    <a class="text-[#868e96] font-['K2D']" href="#">Our Products</a>
+                    <a class="text-[#868e96] font-['K2D']" href="#">Checkouts</a>
+                </div>
+            </div>
+        </div>
+        <div class="w-full h-[71px] flex justify-evenly items-center">
+            <div class="footer-left">
+                <p class="text-[#868e96] text-sm font-['K2D']">© 2023 Your company. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <ul class="footer-right-text flex gap-4">
+                    <li>
+                        <a href="#" class="text-[#868e96] text-sm font-['K2D']">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-[#868e96] text-sm font-['K2D']"> Privacy & cookies</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-[#868e96] text-sm font-['K2D']">Accessibility</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-[#868e96] text-sm font-['K2D']">Customer Data Promise</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="about.js"></script>
 
 </html>
