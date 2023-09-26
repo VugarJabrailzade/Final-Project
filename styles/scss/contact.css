@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parallax-mirror {
+  background-image: url("https://cdn.wallpapersafari.com/52/77/VEYT2s.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-Contact a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}/*# sourceMappingURL=contact.css.map */
