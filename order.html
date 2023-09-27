@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Order</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,15 +13,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Manrope:wght@300;400;500;600;700;800&family=Roboto+Mono:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,200;1,400;1,500;1,600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles/scss/contact.css">
+    <link rel="stylesheet" href="styles/scss/order.css">
     <link rel="stylesheet" href="styles/scss/main.css">
 </head>
 
 <body>
-    <header class="flex flex-col ">
+    <header class="flex flex-col md:flex-flex-col">
         <div class="top-bar w-full h-[55px] flex justify-between items-center px-16">
             <div class="top-left">
                 <ul id="top-left-Head" class="flex gap-4 justify-center items-center">
@@ -51,8 +48,8 @@
                 </select>
             </div>
         </div>
-        <nav class="bg-transparent  flex justify-between items-center w-full h-[82px] px-16">
-            <div class=".parallax-mirror flex gap-4">
+        <nav class="nav-bar md:flex bg-transparent  flex justify-between items-center w-full h-[82px] px-16">
+            <div class="parallax-mirror flex gap-4">
 
                 <a class="nav-bar-nameBrand font-bold font-['K2D'] text-lg" href="index.html">Varkala</a>
                 <ul class="flex justify-between gap-6">
@@ -113,28 +110,28 @@
                     </li>
                 </ul>
             </div>
-            <div id="nav-bar-input" class=" relative flex  items-center">
+            <div id="nav-bar-input" class="flex  items-center">
                 <input id="nav-bar-search" class="w-[212px] h-[40px]" type="search" placeholder="Search">
-                <div id="nav-bar-search-icon" class="absolute right-0 justify-center items-center">
+                <div id="nav-bar-search-icon" class="flex justify-center items-center">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
-            <div class="nav-bar-right">
+            <div class="nav-bar-right sm:display-none">
                 <div class="nav-bar-right-icon flex justify-between gap-6 mt-2">
                     <div>
                         <a class="cursor-pointer "><i class="fa-solid fa-user text-2xl overflow-hidden"></i></a>
                     </div>
-                    <div class="relative">
-                        <a class="cursor-pointer">
+                    <div>
+                        <a class="cursor-pointer ">
                             <i class="fa-regular fa-heart text-2xl overflow-hidden"></i>
-                            <div class="top-[-3px] left-[10px] absolute icon-notification">3</div>
+                            <div class="icon-notification">3</div>
                         </a>
 
                     </div>
                     <div>
-                        <a class="cursor-pointer relative">
+                        <a class="cursor-pointer">
                             <i class="fa-solid fa-bag-shopping text-2xl overflow-hidden"></i>
-                            <div class="icon-notification-2 absolute top-[-16px] left-[10px]">5</div>
+                            <div class="icon-notification-2">5</div>
                         </a>
 
                     </div>
@@ -148,167 +145,151 @@
         <div class="parallaxContainer w-full flex flex-col justify-center items-center">
             <div class="parallax-div w-full">
                 <div class="parallax-mirror flex flex-col gap-10 justify-center items-center">
-                    <div class="text-Contact flex justify-between items-center gap-4">
-                        <a class="text-[#bcac76] font-['K2D']">Home</a>
-                        <i class="fa-solid fa-minus text-[#868e96]"></i>
-                        <p class="font-[500] text-[white]">Contact</p>
-                    </div>
+
                     <p class="text-7xl font-bold inline-block text-[white] text-['K2D']">BLOG</p>
                 </div>
 
             </div>
         </div>
     </header>
-    <div class="w-full h-[365px]  flex justify-center">
-        <div class="flex justify-around items-center gap-32">
-            <div class="w-[229px] h-[173px] flex flex-col gap-2">
-                <h4 class="font-bold text-2xl text-['K2D']">Address</h4>
-                <p class="text-['K2D'] text-[#868e96] text-lg">13/25 New Avenue
-                    New Heaven, 45Y 73J
-                    England, <bold>Great Britain</bold>
-                </p>
+    <div class=" first-container w-full h-[407px]">
+        <div class="row flex items-center ml-[250px] h-[354px]">
+            <div class="flex flex-col gap-10 ">
+                <div class="text-Contact flex  items-center gap-2">
+                    <a class="text-[#bcac76] font-['K2D']">Home</a>
+                    <i class="fa-solid fa-minus text-[#868e96]"></i>
+                    <p class="font-[500] text-[#868e96] text-['K2D']">Order</p>
+                </div>
+                <h1 class="font-bold text-7xl font-['K2D']">Your orders</h1>
+                <p class="text-[#868e96] text-base text-['K2D']">Your orders in one place</p>
             </div>
-            <div class="w-[229px] h-[173px] flex flex-col gap-2">
-                <h4 class="font-bold text-2xl text-['K2D']">Call center</h4>
-                <p class="text-['K2D'] text-[#868e96] text-lg">Sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.</p>
-                <div class="mt-6">
-                    <p class="font-bold text-[#868e96] text-['K2D'] text-lg">+33 555 444 333</p>
+        </div>
+    </div>
+    <div class="table-container w-full flex gap-10">
+        <div class="table-section-div w-[940px] h-[547px] flex flex-col  items-center ml-20 ">
+            <table class="table-auto">
+                <thead class="tableHead">
+                    <tr>
+                        <th>Order #</th>
+                        <th>Date</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody class="px-10">
+                    <tr class="body-table">
+                        <td class="font-bold"># 1735</td>
+                        <td>14/2/2022</td>
+                        <td>$150.00</td>
+                        <td>
+                            <span class="preparedStatus">
+                                Being prepared
+                            </span>
+                        </td>
+                        <td>
+                            <button class="viewBtn w-[66px] h-[28px]">VIEW</button>
+                        </td>
+                    </tr>
+                    <tr class="body-table">
+                        <td class="font-bold"># 1734</td>
+                        <td>01/9/2023</td>
+                        <td>$150.00</td>
+                        <td>
+                            <span class="statusAction">
+                                Action Needed
+                            </span>
+                        </td>
+                        <td>
+                            <button class="viewBtn w-[66px] h-[28px]">VIEW</button>
+                        </td>
+                    </tr>
+                    <tr class="body-table">
+                        <td class="font-bold"># 1730</td>
+                        <td>10/8/2022</td>
+                        <td>$150.00</td>
+                        <td>
+                            <span class="statusReceived">
+                                Received
+                            </span>
+                            </td>
+                        <td>
+                            <button class="viewBtn w-[66px] h-[28px]">VIEW</button>
+                        </td>
+                    </tr>
+                    <tr class="body-table-last">
+                        <td class="font-bold"># 1705</td>
+                        <td>22/6/2021</td>
+                        <td>$150.00</td>
+                        <td>
+                            <span class="statusCanceled">
+                                Canceled
+                            </span>
+                        </td>
+                        <td>
+                            <button class="viewBtn w-[66px] h-[28px]">VIEW</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="orderCard w-[285px] h-[507px]">
+            <div class="orderCard-head flex flex-col items-center">
+                <div class="customerProfil-img mt-4">
+                    <img class="w-[160px] h-[160px] rounded-full" src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-0.jpg" alt="">
+                </div>
+                <div class="customerPr-name flex flex-col items-center">
+                    <p class="pr-name font-bold text-lg">Jane Doe</p>
+                    <p class="">Los Angeles, CA</p>
                 </div>
             </div>
-            <div class="w-[229px] h-[173px] flex flex-col gap-2">
-                <h4 class="font-bold text-2xl text-['K2D']">Electronic support</h4>
-                <p class="text-['K2D'] text-[#868e96] text-lg">Please feel free to write an email to us or to use our
-                    electronic ticketing system.</p>
-                <div class="mt-6">
-                    <p class="font-bold text-[#868e96] text-['K2D'] text-lg">
-                        info@varkala.com
-                        support@varkala.com
-                    </p>
+            <div class="card-body-container mt-6">
+                <div class="orderCard-body order-icon h-[50px] flex items-center justify-between px-4">
+                    <div class="orderIcon">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <a href="#">
+                            <span>Orders</span>
+                        </a>
+                    </div>
+                    <div class="order-notification">5</div>
+                </div>
+                <div class="orderCard-body h-[50px] flex items-center px-4 ">
+                    <div>
+                        <i class="fa-regular fa-user"></i>
+                        <a href="#">
+                            <span>Profile</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="orderCard-body h-[50px] flex items-center px-4 ">
+                    <div>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="#">
+                            <span>Addresses</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="orderCard-body h-[50px] flex items-center px-4 ">
+                    <div>
+                        <i class="fa-regular fa-heart"></i>
+                        <a href="#">
+                            <span>Wishlist</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="orderCard-body logoOut-section h-[50px] flex items-center px-4 ">
+                    <div>
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <a href="#">
+                            <span>Log out</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="w-full h-[797px] flex justify-center overflow-hidden">
-        <div class="flex">
-            <div class="adress-map">
-                <p><iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12157.71469426235!2d49.8539455!3d40.3771909!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d079efb5163%3A0xc20aa51a5f0b5e01!2sCode%20Academy!5e0!3m2!1sen!2saz!4v1695757041652!5m2!1sen!2saz"
-                        width="760" height="797" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-            </div>
-            <div class="adress-Info w-[760px] h-[797px] flex  justify-around items-center flex-col">
-                <div class="adress-Head mr-[260px]">
-                    <h1 class="text-7xl text-['K2D'] font-bold text-[#868e96] ">Our Stores</h1>
-                </div>
-                <div class="address-Stores flex w-[597px] h-[106px] gap-6 ">
-                    <div>
-                        <h1 class="font-bold text-2xl">New York</h1>
-                    </div>
-                    <div class="w-[149px] h-[67px]">
-                        <p>13/25 New Avenue, New Heaven, 45Y 73J</p>
-                    </div>
-                    <div>
-                        <p>564564 789987</p>
-                    </div>
-                    <div>
-                        <p>email.@gmail.com</p>
-                    </div>
-                </div>
-                <div class="address-Stores flex w-[597px] h-[106px] gap-6 ">
-                    <div>
-                        <h1 class="font-bold text-2xl">London</h1>
-                    </div>
-                    <div class="w-[149px] h-[67px]">
-                        <p>13/25 New Avenue, New Heaven, 45Y 73J</p>
-                    </div>
-                    <div>
-                        <p>564564 789987</p>
-                    </div>
-                    <div>
-                        <p>email.@gmail.com</p>
-                    </div>
-                </div>
-                <div class="address-Stores flex w-[597px] h-[106px] gap-6 ">
-                    <div>
-                        <h1 class="font-bold text-2xl">Paris</h1>
-                    </div>
-                    <div class="w-[149px] h-[67px]">
-                        <p>13/25 New Avenue, New Heaven, 45Y 73J</p>
-                    </div>
-                    <div>
-                        <p>564564 789987</p>
-                    </div>
-                    <div>
-                        <p>email.@gmail.com</p>
-                    </div>
-                </div>
-                <div class="address-Stores flex w-[597px] h-[106px] gap-6 ">
-                    <div>
-                        <h1 class="font-bold text-2xl">Tokyo</h1>
-                    </div>
-                    <div class="w-[149px] h-[67px]">
-                        <p>13/25 New Avenue, New Heaven, 45Y 73J</p>
-                    </div>
-                    <div>
-                        <p>564564 789987</p>
-                    </div>
-                    <div>
-                        <p>email.@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="w-full h-[503px] mt-20 overflow-hidden">
-        <div class="flex justify-evenly">
-            <div class="w-[285px] h-[400px] flex flex-col gap-10">
-                <div>
-                    <h1 class="text-8xl font-bold">Get in touch</h1>
-                </div>
-                <div class="getinTouch-icons flex gap-8">
-                    <i class="fa-brands fa-facebook-f text-3xl text-[#bcac76]"></i>
-                    <i class="fa-brands fa-twitter text-3xl text-[#bcac76]"></i>
-                    <i class="fa-brands fa-instagram text-3xl text-[#bcac76]"></i>
-                </div>
-            </div>
-            <div>
-                <div class="w-[470px] h-[90px] flex grid grid-cols-2 gap-">
-                    <div class="contact-Inputs w-[285px] h-[90px] flex flex-col">
-                        <label class="font-bold text-['K2D'] text-lg" for="firstN">Firstname:</label>
-                        <input class="w-[205px] h-[39px]" id="firstN" name="firstname" type="text">
-                    </div>
-                    <div class="contact-Inputs w-[285px] h-[90px] flex flex-col">
-                        <label class="font-bold text-['K2D'] text-lg" for="surname">Surname:</label>
-                        <input class="w-[205px] h-[39px]" id="surname" name="surname" type="text">
-                    </div>
-                    <div class="w-[570px] h-[90px] grid col-span-2">
-                        <div class="contact-InputsEmail flex flex-col">
-                            <label class="font-bold text-['K2D'] text-lg" for="email">Email:</label>
-                            <input class="w-[445px] h-[39px]" id="email" name="email" type="text">
-                        </div>
-                    </div>
-                    <div class="w-[570px] h-[90px] flex  grid grid-cols-1">
-                        <div class="contact-InputsEmail flex flex-col">
-                            <label class="font-bold text-['K2D'] text-lg" for="message">Message for us</label>
-                            <textarea class="h-[90px] w-[445px]" name="message" id="message" cols="30"
-                                rows="10"></textarea>
-                        </div>
-                    </div>
-                    <div class="w-[174px] h-[38px] mt-20 grid col-span-2">
-                        <div class="sendBtn flex justify-center items-center">
-                            <a href="#">
-                                <button class="text-['K2D'] tracking-[2px]">SEND MESSAGE</button>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="service-block w-full h-[285px]  bg-[#f8f9fa] flex justify-center items-center ">
-        <div class="w-[1140px] h-[92px] p-14 flex justify-between items-center">
+    <div class="service-block w-full h-[285px] mt-20 bg-[#f8f9fa] flex justify-center items-center ">
+        <div class="service-block-div service-block-res w-[1140px] h-[92px] p-14 flex justify-between items-center">
             <div class="flex gap-4">
                 <div>
                     <i class="fa-solid fa-truck text-3xl"></i>
@@ -318,7 +299,7 @@
                     <span class="text-[#868e96] text-sm font-['K2D']">Free Shipping over $300</span>
                 </div>
             </div>
-            <div class="flex gap-4">
+            <div class="moneyback-div flex gap-4">
                 <div class="flex justify-center items-center">
                     <i class="fa-solid fa-coins text-3xl"></i>
                 </div>
@@ -430,9 +411,7 @@
         </div>
     </footer>
 
-
 </body>
 <script src="https://cdn.tailwindcss.com"></script>
-<script src="blog.js"></script>
 
 </html>

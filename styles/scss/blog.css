@@ -33,4 +33,31 @@
 .text-Blog a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.mansory-layout {
+  width: 100%;
+  height: 150vh;
+}
+
+.element {
+  width: 306px;
+  height: 204px;
+  margin-top: 70px;
+}
+
+.elementSpecial {
+  width: 306px;
+  height: 400px;
+  margin-top: 70px;
+}
+.elementSpecial img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cart-body a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=blog.css.map */
