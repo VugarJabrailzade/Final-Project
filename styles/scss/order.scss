@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'K2D', sans-serif;
 }
 
 table{ 
@@ -112,9 +113,9 @@ table{
 }
 
 
-@media (max-width:550px) {
+@media (max-width:576px) {
     header{
-        width: 495px;
+        width: 480px;
     }
     #nav-bar-input{
         display: none;
@@ -123,7 +124,7 @@ table{
         display: none;
     }
     .first-container{
-        width: 500px;
+        width: 480px;
     }
     .row{
         margin-left: 0;
@@ -145,7 +146,7 @@ table{
         
         table{
             margin-left: 0;
-            width: 490px;
+            width: 500px;
             display: flex;
             flex-direction: column;
             thead{
@@ -173,6 +174,7 @@ table{
     }
     .orderCard{
         height: 544px;
+        width: 460px;
         width: 470px;
         display: flex;
         align-items: center;
@@ -238,7 +240,7 @@ table{
         border-bottom: none;
     }
     .service-block{
-        width: 500px;
+        width: 480px;
         height: 350px;
         .service-block-res{
             padding: 0;
@@ -260,5 +262,38 @@ table{
     footer{
         width: 500px;
         height: 50px;
+        .footer-first-section{
+            width: 480px;
+            height: 382px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 100px;
+        }
+        .footer-search-input{
+            width: 450px;
+            height: 161px;
+        }
     }
+    .footer-company-section, .footer-account-section {
+        display: none;
+    }
+    .last-section-footer {
+        width: 480px;
+        height: 139px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+        .footer-right{
+            display: flex;
+            gap:0;
+            text-align: center !important;
+            a{
+                font-size: 12px;
+            }
+            
+        }
+    }
+
 }
