@@ -433,3 +433,67 @@ input[type="password"] {
   right: 0.25em;
   top: 0.25em;
 }
+
+.brands-Input{
+  input{
+    width: 15px;
+  }
+}
+.colorRadio{
+  input[type="checkbox"]{
+    width: 50px;
+  }
+}
+
+
+//modal popup
+dialog {
+  /* Styles for dialogs that carry both modal and non-modal behaviors */
+  width: 1150px;
+  
+}
+
+dialog:modal {
+  width:1150px !important;
+  height: 750px; 
+  overflow: hidden;
+ 
+}
+
+dialog:not(:modal) {
+  /* Styles for dialogs that carry non-modal behavior */
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+  line-height: 1;
+  padding: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  font: inherit;
+  line-height: 1;
+  padding: 0.5rem;
+}
+
+.modal {
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem 0.25rem hsl(0 0% 0% / 10%);
+  padding: 2rem;
+  position: fixed;
+}
+
+.modal::backdrop {
+  background: hsl(0 0% 0% / 50%);
+}
+
+.modal-close-btn {
+  font-size: 0.75em;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}

@@ -1,10 +1,10 @@
-
- 
  const trousersBtn = document.querySelector(".trousersBtn");
  const jacketsBtn  = document.querySelector(".jacketsBtn ");
  const chevronRight = document.querySelector(".trousersChevron");
  const tshirtBtn = document.querySelector(".TshirtBtn");
  const defaultBtn = document.querySelector(".defaultBtn");
+
+
 
  defaultBtn.addEventListener("click", ()=>{
     $("#contentDefault").slideToggle();
@@ -70,3 +70,6 @@ rangeInput.forEach((input) => {
     }
   });
 });
+
+// modal popup
+

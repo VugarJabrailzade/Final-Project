@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <header class="flex flex-col ">
+    <header class="flex flex-col md:flex-flex-col">
         <div class="top-bar w-full h-[55px] flex justify-between items-center px-16">
             <div class="top-left">
                 <ul id="top-left-Head" class="flex gap-4 justify-center items-center">
@@ -52,8 +52,8 @@
                 </select>
             </div>
         </div>
-        <nav class="bg-transparent  flex justify-between items-center w-full h-[82px] px-16">
-            <div class=".parallax-mirror flex gap-4">
+        <nav class="nav-bar md:flex bg-transparent  flex justify-between items-center w-full h-[82px] px-16">
+            <div class="parallax-mirror flex gap-4">
 
                 <a class="nav-bar-nameBrand font-bold font-['K2D'] text-lg" href="index.html">Varkala</a>
                 <ul class="flex justify-between gap-6">
@@ -114,28 +114,28 @@
                     </li>
                 </ul>
             </div>
-            <div id="nav-bar-input" class=" relative flex  items-center">
+            <div id="nav-bar-input" class="flex  items-center relative">
                 <input id="nav-bar-search" class="w-[212px] h-[40px]" type="search" placeholder="Search">
-                <div id="nav-bar-search-icon" class="absolute right-0 justify-center items-center">
+                <a id="nav-bar-search-icon" class="flex justify-center items-center left-[90%] absolute" href="#">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+                </a>
             </div>
-            <div class="nav-bar-right">
+            <div class="nav-bar-right sm:display-none">
                 <div class="nav-bar-right-icon flex justify-between gap-6 mt-2">
                     <div>
                         <a class="cursor-pointer "><i class="fa-solid fa-user text-2xl overflow-hidden"></i></a>
                     </div>
-                    <div class="relative">
-                        <a class="cursor-pointer">
+                    <div>
+                        <a class="cursor-pointer ">
                             <i class="fa-regular fa-heart text-2xl overflow-hidden"></i>
-                            <div class="top-[-3px] left-[10px] absolute icon-notification">3</div>
+                            <div class="icon-notification">3</div>
                         </a>
 
                     </div>
                     <div>
-                        <a class="cursor-pointer relative">
+                        <a class="cursor-pointer">
                             <i class="fa-solid fa-bag-shopping text-2xl overflow-hidden"></i>
-                            <div class="icon-notification-2 absolute top-[-16px] left-[10px]">5</div>
+                            <div class="icon-notification-2">5</div>
                         </a>
 
                     </div>
@@ -221,44 +221,34 @@
                 <div class="brandsHead">
                     <h2 class="font-bold text-2xl">Brands</h2>
                 </div>
-                <input type="checkbox" style=" accent-color: red;">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-
                 <div class="brands-Input mt-4 flex flex-col gap-2">
-                    <div class="flex text-[18px]">
-                        <input type="checkbox" checked class="checkbox-input" id="checkbox">
-                        <label for="checkbox">
-                            <span class="checkbox"></span>
+                    <div class="flex gap-2 text-[18px]">
+                        <input type="checkbox" checked id="kleinCheck" style=" accent-color: black;">
+                        <label for="kleinCheck">
                             Calvin Klein (18)
                         </label>
                     </div>
-                    <div class="flex text-[18px]">
-                        <input type="checkbox" checked class="checkbox-input" id="checkbox">
-                        <label for="checkbox">
-                            <span class="checkbox"></span>
+                    <div class="flex gap-2 text-[18px]">
+                        <input type="checkbox" checked id="straussCheck" style=" accent-color: black;">
+                        <label for="straussCheck">
                             Levi Strauss (30)
                         </label>
                     </div>
-                    <div class="flex text-[18px]">
-                        <input type="checkbox" class="checkbox-input" id="checkbox">
-                        <label for="checkbox">
-                            <span class="checkbox"></span>
+                    <div class="flex gap-2 text-[18px]">
+                        <input type="checkbox" id="hugoBossCheck" style=" accent-color: black;">
+                        <label for="hugoBossCheck">
                             Hugo Boss (120)
                         </label>
                     </div>
-                    <div class="flex text-[18px]">
-                        <input type="checkbox" class="checkbox-input" id="checkbox">
-                        <label for="checkbox">
-                            <span class="checkbox"></span>
+                    <div class="flex gap-2 text-[18px]">
+                        <input type="checkbox" id="hilfigerCheck" style=" accent-color: black;">
+                        <label for="hilfigerCheck">
                             Tomi Hilfiger (70)
                         </label>
                     </div>
-                    <div class="flex text-[18px]">
-                        <input type="checkbox" class="checkbox-input" id="checkbox">
-                        <label for="checkbox">
-                            <span class="checkbox"></span>
+                    <div class="flex gap-2 text-[18px]">
+                        <input type="checkbox" id="tomFordCheck" style=" accent-color: black;">
+                        <label for="tomFordCheck">  
                             Tom Ford (110)
                         </label>
                     </div>
@@ -287,15 +277,24 @@
                     </div>
                 </div>
             </div>
-            <div class="colors w-[260] h-[144px] pt-6 flex flex-col">
-                <div class="colorsHead pb-">
+            <div class="colors w-[260] h-[144px] pt-6 flex gap-4 flex-col">
+                <div class="colorsHead ">
                     <h2 class="font-bold text-2xl">Colour</h2>
                 </div>
                 <div class="color-input">
-                    <div class="colorRadio">
-                        <input type="radio" id="color1" name="blue" value="M" />
-                        <label for="color1">Male</label>
-
+                    <div class="colorRadio flex items-center">
+                        <div>
+                            <input type="checkbox" id="color1" class="" name="blue" value="M" />
+                        </div>
+                        <div>
+                            <input type="checkbox" id="color1" class="" name="blue" value="M" />
+                        </div>
+                        <div>
+                            <input type="checkbox" id="color1" class="" name="blue" value="M" />
+                        </div>
+                        <div>
+                            <input type="checkbox" id="color1" class="" name="blue" value="M" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -389,8 +388,10 @@
                         </div>
                     </a>
                     <div class="productInfo pt-4 flex justify-between">
-                        <a href="#" class="productName font-bold text-lg">Black blouse</a>
-                        <div class="productPrice text-[#868e96] text-sm">$40.00</div>
+                        <div>
+                            <a href="#" class="productName font-bold text-lg">Black blouse</a>
+                            <div class="productPrice text-[#868e96] text-sm">$40.00</div>
+                        </div>
                         <div class="starIcon mt-6 flex ">
                             <i class="fa-solid fa-star text-[#bcac76]  text-xs"></i>
                             <i class="fa-solid fa-star  text-[#bcac76] text-xs"></i>
@@ -890,7 +891,9 @@
                         <div class="addCardlink flex justify-between p-4">
                             <a class="font-bold text-base" href="#">Add to card</a>
                             <div class="addCardIcon flex items-center gap-2">
-                                <i class="fa-regular fa-heart text-base text-[#bcac76] cursor-pointer"></i>
+                                <button class="addWhislist">
+                                    <i class="fa-regular fa-heart text-base text-[#bcac76] cursor-pointer"></i>
+                                </button>
                                 <i class="fa-solid fa-compress text-[#bcac76] cursor-pointer"></i>
                             </div>
                         </div>
@@ -921,10 +924,9 @@
                             <a class="font-bold text-base" href="#">Add to card</a>
                             <div class="addCardIcon flex items-center gap-2">
                                 <i class="fa-regular fa-heart text-base text-[#bcac76] cursor-pointer"></i>
-                                <a href="" id="openModalBtn">
-                                    Modal
-                                    <!-- <i class="fa-solid fa-compress text-[#bcac76] cursor-pointer"></i> -->
-                                </a>
+                                <button href="" id="myBtn">
+                                    <i class="fa-solid fa-compress text-[#bcac76] cursor-pointer"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -952,9 +954,11 @@
                     <div class="addToCard-section w-[212px] h-[52px] absolute">
                         <div class="addCardlink flex justify-between p-4">
                             <a class="font-bold text-base" href="#">Add to card</a>
-                            <div class="addCardIcon flex items-center gap-2">
+                            <div  class="addCardIcon flex items-center gap-2">
                                 <i class="fa-regular fa-heart text-base text-[#bcac76] cursor-pointer"></i>
-                                <i class="fa-solid fa-compress text-[#bcac76] cursor-pointer"></i>
+                                <button id="openModalBtn">
+                                    <i class="fa-solid fa-compress text-[#bcac76] cursor-pointer"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -1146,15 +1150,6 @@
             </div>
         </div>
     </footer>
-
-
-   
-<dialog id="dialogModal" class="modal">
-    <h1>My Modal</h1>
-    <p>Modal content...</p>
-    <p>Click the below button or press `ESC` key to close this.</p>
-    <button id="closeModalBtn" class="modal-close-btn">Close the modal</button>
-  </dialog>
 
 </body>
 
