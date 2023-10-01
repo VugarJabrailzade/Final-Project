@@ -1,3 +1,4 @@
+
  const trousersBtn = document.querySelector(".trousersBtn");
  const jacketsBtn  = document.querySelector(".jacketsBtn ");
  const chevronRight = document.querySelector(".trousersChevron");
@@ -73,3 +74,45 @@ rangeInput.forEach((input) => {
 
 // modal popup
 
+const addWhislist = document.querySelectorAll(".addWishlist");
+
+addWhislist.forEach(button =>{
+  button.addEventListener("click", (e) => {
+    handleAddButton(e);
+  })
+})
+
+function handleAddButton(e){
+    const test = e.target;
+    const parent = test.parentElement;
+    
+    const id = parent.getAttribute('data-id');
+    const name = parent.getAttribute('data-name');
+    const price = parent.getAttribute('data-price');
+    const size = parent.getAttribute('data-size');
+    const img = parent.getAttribute('data-image');
+
+    
+    const productObj =  {
+        id,
+        name,
+        price,
+        size,
+        img,
+    }
+
+    const currentProduct = localStorage.getItem("basket") ? JSON.parse(localStorage.getItem("basket")) : [];
+
+    const existProduct = currentProduct.some(product => {
+        return product.id === id
+    });
+    if(!existProduct){
+
+        currentProduct.push(productObj)
+
+        const jsProductObj = JSON.stringify(currentProduct);
+
+        localStorage.setItem("basket",jsProductObj);
+
+    }
+}
