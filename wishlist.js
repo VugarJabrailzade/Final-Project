@@ -15,7 +15,7 @@ function render () {
         const size = document.createElement("span")
         const price = document.createElement("span")
         const status = document.createElement("span")
-        const removeItem = document.createElement("button")
+        const removeItemBtn = document.createElement("button")
     
         card.classList.add("productCart")
             
@@ -25,6 +25,7 @@ function render () {
         
         //title Name
         title.innerText = product.name;
+        title.setAttribute("href", "#")
         title.classList.add("productname")
 
         //size 
@@ -39,18 +40,29 @@ function render () {
         status.innerText = "In Stock"
 
         //remove 
-        removeItem.innerHTML = "x"
+        removeItemBtn.innerHTML = "x"
+        removeItemBtn.setAttribute("type","button")
 
         card.appendChild(image);
         card.appendChild(title)
         card.appendChild(size);
         card.appendChild(price);
         card.appendChild(status);
-        card.appendChild(removeItem)
+        card.appendChild(removeItemBtn)
 
         productContainer.appendChild(card);
+
+        removeItemBtn.addEventListener("click", (e) => {
+            const id = product.id
+            console.log(id)
+
+            const selectedProduct = products.filter(currentProduct => {
+            return currentProduct.id !== id;
+        })
+        localStorage.setItem("basket", JSON.stringify(selectedProduct));
+        card.remove();
     })
 
-}
+})};
 
 render();
